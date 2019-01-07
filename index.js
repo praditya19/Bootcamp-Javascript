@@ -1,2 +1,3 @@
-// This is my javascript code
-console.log('Hello World!!');
+let selectedColors = ['green', 'white', 'red'];
+selectedColors[7] = 1;
+console.log(selectedColors.length);
