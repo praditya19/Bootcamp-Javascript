@@ -1,6 +1,3 @@
-function square(number) {
-  return number * number;
-}
-
-let number = square(2);
-console.log(number);
+let interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);
