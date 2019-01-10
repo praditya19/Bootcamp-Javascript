@@ -1,7 +1,5 @@
-let highIncome = false;
-let goodCreditScore = false;
-let eligbleForLoan = highIncome || goodCreditScore;
-console.log('Eligible', eligbleForLoan);
+let userColor = undefined;
+let defaultColor = 'red';
+let currentColor = userColor || defaultColor;
 
-let applicationRefush = !eligbleForLoan;
-console.log('application Refush', applicationRefush);
+console.log(currentColor);
