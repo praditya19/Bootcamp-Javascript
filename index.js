@@ -1,8 +1,4 @@
-// persamaan ketat (type + value)
-console.log(2 === 2);
-console.log('2' === 2);
+let points = 100;
+let type = points < 90 ? 'gold' : 'silver';
 
-//tidak sama atau tidak setara (value)
-console.log(1 == 1);
-console.log('1' == 1);
-console.log(true == 1);
+console.log(type);
