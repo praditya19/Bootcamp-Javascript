@@ -1,3 +1,5 @@
-let rumus = (10 + 50) * 100;
+let hour = 20;
 
-console.log(rumus);
+if (hour >= 6 && hour < 12) console.log('Good morning');
+else if (hour >= 12 && hour < 20) console.log('Good afternoon');
+else console.log('Good evening');
