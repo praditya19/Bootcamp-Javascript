@@ -1,11 +1,8 @@
-let x = 2;
+// persamaan ketat (type + value)
+console.log(2 === 2);
+console.log('2' === 2);
 
-//hubungan
-console.log(x > 0);
-console.log(x >= 2);
-console.log(x < 2);
-console.log(x <= 2);
-
-//persamaan
-console.log(x === 2);
-console.log(x !== 2);
+//tidak sama atau tidak setara (value)
+console.log(1 == 1);
+console.log('1' == 1);
+console.log(true == 1);
