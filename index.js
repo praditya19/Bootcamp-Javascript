@@ -1,11 +1,12 @@
-console.log(Ukuran(600, 1000));
+const output = fizzBuzz(false);
+console.log(output);
 
-function Ukuran(width, height) {
-  return width < height;
-}
+function fizzBuzz(input) {
+  if (typeof input !== 'number') return NaN;
 
-console.log(block(6000, 1000));
+  if (input % 3 === 0 && input % 5 === 0) return 'fizz';
 
-function block(width, height) {
-  return width < height;
+  if (input % 5 === 0) return 'Buzz';
+
+  return input;
 }
