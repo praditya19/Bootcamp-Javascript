@@ -1,14 +1,9 @@
-function binus123(marks) {
-  const average = binusverage(marks);
-  if (average < 60) return 'f';
-  if (average < 70) return 'D';
-  if (average < 80) return 'C';
-  if (average < 90) return 'B';
-  return 'A';
-}
+showStars(2);
 
-function binusverage(array) {
-  let sum = 0;
-  for (let value of array) sum += value;
-  return sum / array.length;
+function showStars(rows) {
+  for (let row = 1; row <= rows; row++) {
+    let pattern = '';
+    for (let i = 0; i < row; i++) pattern += '*';
+    console.log(pattern);
+  }
 }
