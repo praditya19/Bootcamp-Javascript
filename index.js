@@ -1,10 +1,13 @@
-let i = 0;
-while (i <= 10) {
-  if (i === 10) break;
-  if (i % 2 === 0) {
-    i++;
-    continue;
-  }
-  console.log(i);
-  i++;
+let number = max(5, 20);
+console.log(number);
+
+function max(a, b) {
+  return a > b ? a : b;
+}
+
+let angka = min(100, 10000);
+console.log(angka);
+
+function min(b, c) {
+  return b > c ? c : b;
 }
