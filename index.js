@@ -1,13 +1,11 @@
-let number = max(5, 20);
-console.log(number);
+console.log(Ukuran(600, 1000));
 
-function max(a, b) {
-  return a > b ? a : b;
+function Ukuran(width, height) {
+  return width < height;
 }
 
-let angka = min(100, 10000);
-console.log(angka);
+console.log(block(6000, 1000));
 
-function min(b, c) {
-  return b > c ? c : b;
+function block(width, height) {
+  return width < height;
 }
