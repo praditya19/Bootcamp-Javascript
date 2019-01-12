@@ -1,10 +1,10 @@
-const person = {
-  name: 'Rendi',
-  age: 18
-};
-
-for (let key in person) console.log(key, person[key]);
-
-const colors = ['yellow', 'red', 'blue', 'green'];
-
-for (let color of colors) console.log(color);
+let i = 0;
+while (i <= 10) {
+  if (i === 10) break;
+  if (i % 2 === 0) {
+    i++;
+    continue;
+  }
+  console.log(i);
+  i++;
+}
