@@ -1,14 +1,7 @@
-const movie = {
-  title: 'a',
-  releaseYear: 2018,
-  rating: 4.5,
-  directory: 'b'
-};
+console.log(sum(15));
 
-showProperties(movie);
-
-function showProperties(obj) {
-  for (let key in obj) {
-    if (typeof obj[key] === 'string') console.log(key, obj[key]);
-  }
+function sum(limit) {
+  let sum = 0;
+  for (let i = 0; i <= limit; i++) if (i % 3 === 0 || i % 5 === 0) sum += i;
+  return sum;
 }
