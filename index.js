@@ -1,13 +1,3 @@
-const circle = {
-  raduis: 1
-};
-
-//circle = {}
-
-circle.color = 'yellow';
-circle.draw = function() {};
-/*
-delete circle.color;
-delete circle.draw;
-*/
-console.log(circle);
+new String(); // '',"",``
+new Boolean(); // true, false
+new Number(); // 1,2,3,...
