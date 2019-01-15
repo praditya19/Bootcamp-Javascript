@@ -5,10 +5,12 @@ const circle = {
   }
 };
 
-for (let key in circle) console.log(key, circle[key]);
+//const another = {};
+//for (let key in circle);
+//another[key] = circle[key];
 
-for (let key of Object.keys(circle)) console.log(key);
+const another = Object.assign({}, circle);
 
-for (let entry of Object.entries(circle)) console.log(entry);
+const another = { ...circle };
 
-if ('color' in circle) console.log('yes');
+console.log(another);
