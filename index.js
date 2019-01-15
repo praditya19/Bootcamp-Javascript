@@ -1,18 +1,13 @@
-function createCircle(radius) {
-  return {
-    radius,
-    draw() {
-      console.log('draw');
-    }
-  };
-}
+const circle = {
+  raduis: 1
+};
 
-const myCircle1 = createCircle(1);
+//circle = {}
 
-//Constructor Function
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function() {
-    console.log('draw');
-  };
-}
+circle.color = 'yellow';
+circle.draw = function() {};
+/*
+delete circle.color;
+delete circle.draw;
+*/
+console.log(circle);
