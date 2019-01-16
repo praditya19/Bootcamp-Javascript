@@ -1,13 +1,10 @@
-function createAddress(street, city, zipCode) {
-  return {
-    street: 'a',
-    city: 'b',
-    zipCode: 'c'
-  };
-}
+let address = {
+  street: 'a',
+  city: 'b',
+  zipCode: 'c'
+};
 
-function showAddress(street, city, zipCode) {
-  this.street = street;
-  this.city = city;
-  this.zipCode = zipCode;
+function showAddresse(address) {
+  for (let key in address) console.log(key, address[key]);
 }
+showAddresse(address);
