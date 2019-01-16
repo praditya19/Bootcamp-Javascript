@@ -1,11 +1,13 @@
-let address = {
-  street: 'a',
-  city: 'b',
-  zipCode: 'c'
-};
-
-function showAddress(address) {
-  for (let key in address) console.log(key, address[key]);
+function createAddress(street, city, zipCode) {
+  return {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
+  };
 }
 
-showAddress(address);
+function showAddress(street, city, zipCode) {
+  this.street = street;
+  this.city = city;
+  this.zipCode = zipCode;
+}
