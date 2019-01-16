@@ -1,3 +1,9 @@
-const message = 'this is my\n first message';
+const name = 'rendi';
+const message = 'hi ' + name + ',\n';
 
-const another = new String('hi');
+const another = `hi ${name} ${2 + 3}
+Thank you for joining my mailing list
+
+Regards
+rendi
+`;
