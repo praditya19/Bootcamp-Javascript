@@ -1,9 +1,10 @@
 const number = [1, -1, 2, 3];
 
-const items = number
-  .filter(n => n >= 0)
-  .map(n => ({ value: n }))
-  .filter(obj => obj.value > 1)
-  .map(obj => obj.value);
+const sum = number.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
 
-console.log(items);
+let sum = 0;
+for (let n of number) sum += n;
+
+console.log(sum);
