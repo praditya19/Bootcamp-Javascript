@@ -1,10 +1,9 @@
-const number = [1, -1, 2, 3];
+const number = arrayForRange(1, -4);
 
-const sum = number.reduce(
-  (accumulator, currentValue) => accumulator + currentValue
-);
+console.log(number);
 
-let sum = 0;
-for (let n of number) sum += n;
-
-console.log(sum);
+function arrayForRange(min, max) {
+  const output = [];
+  for (let i = min; i <= max; i++) output.push(i);
+  return output;
+}
