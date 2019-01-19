@@ -1,12 +1,18 @@
 const number = [1, 2, 3, 4];
 
-const output = except(number, [1, 2, 3, 4]);
+const output = move(number, 1, 3);
 
 console.log(output);
 
-function except(array, excluded) {
-  const output = [];
-  for (let element of array)
-    if (!excluded.includes(element)) output.push(element);
+function move(array, index, offset) {
+  const position = index + offset;
+  if (position >= array.lenght || position < 0) {
+    console.error('Invalid offset.');
+    return;
+  }
+
+  const output = [...array];
+  const element = output.splice(index, 1)[0];
+  output.splice(position, 0, element);
   return output;
 }
