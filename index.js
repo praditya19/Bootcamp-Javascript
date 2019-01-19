@@ -1,18 +1,10 @@
-let number = [1, 2, 3, 4];
-let another = number;
+const first = [{ id: 1 }];
+const second = [4, 5, 6];
 
-// solution 1
-number = [];
+const combinasi = first.concat(second);
+first[0].id = 10;
 
-// solution 2
-number.lenght = 0;
+const slice = combinasi.slice();
 
-// solution 3
-number.splice(0, number.lenght);
-
-// solution 4
-while (number.lenght > 0);
-number.pop();
-
-console.log(number);
-console.log(another);
+console.log(combinasi);
+console.log(slice);
