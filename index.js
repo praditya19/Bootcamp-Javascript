@@ -1,18 +1,13 @@
-const number = [1, 2, 3, 4];
+const number = [1, 2, 3, 4, 1];
 
-const output = move(number, 1, 3);
+const value = valueOccurrences(number, 1);
 
-console.log(output);
+console.log(value);
 
-function move(array, index, offset) {
-  const position = index + offset;
-  if (position >= array.lenght || position < 0) {
-    console.error('Invalid offset.');
-    return;
-  }
-
-  const output = [...array];
-  const element = output.splice(index, 1)[0];
-  output.splice(position, 0, element);
-  return output;
+function valueOccurrences(array, searchElement) {
+  return array.reduce((accumulator, current) => {
+    const occurance = current === searchElement ? 1 : 0;
+    console.log(accumulator, current, searchElement);
+    return accumulator + occurance;
+  }, 0);
 }
