@@ -1,9 +1,8 @@
-const number = arrayForRange(1, -4);
+const number = [1, 2, 3, 4];
 
-console.log(number);
+console.log(includes(number, -1));
 
-function arrayForRange(min, max) {
-  const output = [];
-  for (let i = min; i <= max; i++) output.push(i);
-  return output;
+function includes(array, searchElement) {
+  for (let element of array) if (element === searchElement) return true;
+  return false;
 }
