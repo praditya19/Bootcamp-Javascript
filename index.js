@@ -1,10 +1,8 @@
-const first = [{ id: 1 }];
+const first = [1, 2, 3];
 const second = [4, 5, 6];
 
-const combinasi = first.concat(second);
-first[0].id = 10;
+//const combinasi = first.concat(second);
+const combinasi = [...first, 'a', ...second, 'b'];
 
-const slice = combinasi.slice();
-
-console.log(combinasi);
-console.log(slice);
+//const copy = combinasi.slice();
+const copy = [combinasi];
