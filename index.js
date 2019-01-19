@@ -1,11 +1,18 @@
-const number = [1, 2, 3, 4];
+let number = [1, 2, 3, 4];
+let another = number;
 
-//end
-const last = number.pop();
+// solution 1
+number = [];
 
-//beginning
-const first = number.shift();
+// solution 2
+number.lenght = 0;
 
-//middle
-number.splice(2, 2);
+// solution 3
+number.splice(0, number.lenght);
+
+// solution 4
+while (number.lenght > 0);
+number.pop();
+
 console.log(number);
+console.log(another);
