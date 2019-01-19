@@ -1,10 +1,17 @@
-const numbers = [1, 2, 3];
-const joined = numbers.join(',');
-console.log(joined);
+const choice = [
+  { id: 1, name: 'node.js' },
+  { id: 2, name: 'javaScript' },
+  { id: 2, name: 'React Js' },
+  { id: 2, name: 'React Native' }
+];
 
-const message = 'this is my first message';
-const parts = message.split(' ');
-console.log(parts);
+choice.sort(function(a, b) {
+  const nameA = a.name.toLowerCase();
+  const nameB = b.name.toLowerCase();
 
-const combinasi = parts.join('-');
-console.log(combinasi);
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
+
+console.log(choice);
