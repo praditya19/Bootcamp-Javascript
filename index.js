@@ -1,6 +1,5 @@
-function number(discount, ...prices) {
-  const total = prices.reduce((a, b) => a + b);
-  return total * (-1 - discount);
+function tahun(principal, rate = 3.5, years = 5) {
+  return ((principal * rate) / 100) * years;
 }
 
-console.log(number(0.1, 20, 30, 1));
+console.log(tahun(10000, undefined, 5));
