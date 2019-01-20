@@ -1,5 +1,16 @@
-function tahun(principal, rate = 3.5, years = 5) {
-  return ((principal * rate) / 100) * years;
-}
+const person = {
+  firstName: 'praditya',
+  lastName: 'rendi',
+  get fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(' ');
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
+};
 
-console.log(tahun(10000, undefined, 5));
+person.fullName = 'pangalila';
+
+console.log(person);
