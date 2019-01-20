@@ -1,12 +1,13 @@
 // Function Declaration
+walk();
+
 function walk() {
   console.log('walk');
 }
 
-//Anonymous Function Expression
+//Function Expression
+run();
+
 const run = function() {
   console.log('run');
 };
-let move = run;
-run();
-move();
