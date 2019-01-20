@@ -1,13 +1,6 @@
 const warna = 'yellow';
+let age = 18;
 
-function mulai() {
-  const message = 'hai';
-  const color = 'red';
-  console.log(color);
+function hello() {
+  console.log('hi');
 }
-
-function berhenti() {
-  const message = 'bye';
-}
-
-mulai();
