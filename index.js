@@ -1,6 +1,11 @@
-const warna = 'yellow';
-let age = 18;
+const video = {
+  title: 'a',
+  tags: ['a', 'b', 'c'],
+  showTags() {
+    this.tags.forEach(function(tag) {
+      console.log(this.title, tag);
+    }, this);
+  }
+};
 
-function hello() {
-  console.log('hi');
-}
+video.showTags();
